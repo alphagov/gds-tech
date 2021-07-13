@@ -43,7 +43,7 @@ You could also provide a mailing list so people can discuss your project.
 
 ## Use GitHub
 
-[GDS uses GitHub as its code repository](https://gdstechnology.blog.gov.uk/2016/05/31/how-we-use-git-at-the-government-digital-service/).
+[GDS uses GitHub as its code repository](https://technology.blog.gov.uk/2016/05/31/how-we-use-git-at-the-government-digital-service/).
 
 Put new repositories for GDS services in the [alphagov](https://github.com/alphagov/) organisation on GitHub.
 
@@ -53,14 +53,14 @@ To secure your Github repository, make sure you:
 
 - configure two-factor authentication for your account
 - have considered encrypting your repository contents
-- consider [protecting your main branch](https://help.github.com/articles/about-protected-branches/) to prevent changes being committed without a suitable review
+- consider [protecting your main branch](https://docs.github.com/en/github/administering-a-repository/defining-the-mergeability-of-pull-requests/about-protected-branches) to prevent changes being committed without a suitable review
 
 You can also consider backing up your Git repositories to another location (this should be a team responsibility). If you are using AWS to host your service
 [AWS CodeCommit](https://aws.amazon.com/codecommit/) is one option.
 
 ### How to retire applications
 
-If an application is no longer used in production, you should [archive its repository](https://help.github.com/articles/archiving-repositories/).
+If an application is no longer used in production, you should [archive its repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/archiving-a-github-repository/archiving-repositories).
 
 Update the application's README to explain why the repository has been archived, and link to a new location if the application has been superseded.
 
@@ -128,14 +128,14 @@ developers on your project. This includes:
   made
 
 Capturing context around a change allows people to understand why a particular
-implementation decision was made, much like an [architecture decision record](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions). We're
+implementation decision was made, much like an [architecture decision record](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions). We're
 being kinder to our future selves.
 
 #### Recommended blog posts on this topic
 
 * [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
-* [5 useful tips for a better commit message](http://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message)
-* [Every line of code is always documented](http://mislav.uniqpath.com/2014/02/hidden-documentation/)
+* [5 useful tips for a better commit message](https://thoughtbot.com/blog/5-useful-tips-for-a-better-commit-message)
+* [Every line of code is always documented](https://mislav.net/2014/02/hidden-documentation/)
 
 #### Content
 
@@ -186,7 +186,7 @@ messages in a terminal.
 
 ##### Example
 
-Taken from [Tim Pope’s guidelines](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).
+Taken from [Tim Pope’s guidelines](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).
 
 > Capitalized, short (50 chars or less) summary
 
@@ -265,7 +265,7 @@ $ git push --force-with-lease
 ```
 
 `--force-with-lease` [refuses to update a
-branch](https://developer.atlassian.com/blog/2015/04/force-with-lease/) unless
+branch](https://blog.developer.atlassian.com/force-with-lease/) unless
 it is the state that we expect, which is that nobody has updated the remote branch.
 
 [make our source code open and reusable]: https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable
@@ -277,7 +277,7 @@ it is the state that we expect, which is that nobody has updated the remote bran
 [RubyGems]: https://rubygems.org/
 [Travis CI]: https://travis-ci.org/
 [CircleCI]: https://circleci.com/
-[Jenkins]: https://jenkins.io/
+[Jenkins]: https://www.jenkins.io/
 [Go repository]: https://golang.org/CONTRIBUTORS
 [keeping some data and code closed]: https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed
 [how to open previously closed code and your responsibilities for maintaining open code]: https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable

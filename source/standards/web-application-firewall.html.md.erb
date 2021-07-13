@@ -6,11 +6,11 @@ review_in: 6 months
 
 # <%= current_page.data.title %>
 
-A [web application firewall (WAF)](https://www.owasp.org/index.php/Web_Application_Firewall) is an application layer protection for bi-directional web-based traffic. With a WAF, you can track web traffic and use specific tools to configure access control for your web content. Doing this improves your service’s security monitoring and security position.
+A [web application firewall (WAF)](https://owasp.org/www-community/Web_Application_Firewall) is an application layer protection for bi-directional web-based traffic. With a WAF, you can track web traffic and use specific tools to configure access control for your web content. Doing this improves your service’s security monitoring and security position.
 
 ## Why you should use a WAF
 
-Your continuous integration (CI) and continuous deployment (CD) pipelines should include security tests in their workflows to identify any common vulnerabilities in your code. Some common vulnerabilities like [Cross-site Scripting (XSS)](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)) and [XML command injection attacks](https://www.owasp.org/index.php/Testing_for_XML_Injection_(OTG-INPVAL-008)) are still possible in your production environments due to human error.
+Your continuous integration (CI) and continuous deployment (CD) pipelines should include security tests in their workflows to identify any common vulnerabilities in your code. Some common vulnerabilities like [Cross-site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/) and [XML command injection attacks](https://wiki.owasp.org/index.php/Testing_for_XML_Injection_(OTG-INPVAL-008)) are still possible in your production environments due to human error.
 
 Combine WAF with CI and CD tools to reduce the risk from those tools, and provide enhanced layered security coverage for your service.
 
@@ -22,19 +22,19 @@ You may also need to use a WAF because of:
 
 ## When and how to use a WAF
 
-Set up a baseline of tests in your project’s alpha phase to identify any security vulnerabilities. As your service’s features grow, extend your tests to cover new vulnerabilities you identify. For example, through exercises like [application threat modelling](https://www.owasp.org/index.php/Application_Threat_Modeling)
+Set up a baseline of tests in your project’s alpha phase to identify any security vulnerabilities. As your service’s features grow, extend your tests to cover new vulnerabilities you identify. For example, through exercises like [application threat modelling](https://owasp.org/www-community/Application_Threat_Modeling)
 
-[Good development practices](https://gds-way.cloudapps.digital/#how-to-build-software) should detect and fix common vulnerabilities before they reach production environments. Use your WAF to track digital services vulnerabilities an attacker could exploit.
+[Good development practices](/) should detect and fix common vulnerabilities before they reach production environments. Use your WAF to track digital services vulnerabilities an attacker could exploit.
 
 You should:
 
 - have an independent security audit in place
-- use established [logging techniques](https://gds-way.cloudapps.digital/manuals/logging.html)
+- use established [logging techniques](/standards/logging.html)
 - encrypt data at rest as well as in transit
 - subscribe to and apply security patches
-- use query variables instead of plain text (stored procedure) to prevent [SQL injections](https://www.owasp.org/index.php/SQL_Injection)
+- use query variables instead of plain text (stored procedure) to prevent [SQL injections](https://owasp.org/www-community/attacks/SQL_Injection)
 
-You should monitor the Open Web Application Security Project (OWASP) [top 10 most critical web application vulnerabilities](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project) to keep up to date with the latest threats.
+You should monitor the Open Web Application Security Project (OWASP) [top 10 most critical web application vulnerabilities](https://owasp.org/www-project-top-ten/) to keep up to date with the latest threats.
 
 Using a WAF should align with your other security monitoring features, like [Security Information Event Management (SIEM)](https://en.wikipedia.org/wiki/Security_information_and_event_management). When developing use cases you should also factor in the extra time and resources needed to configure WAF rules.
 
@@ -89,6 +89,6 @@ Contact the security architects in the GDS Cyber Security team by email at [cybe
 
 To find out more about WAF refer to:
 
-- [Open Web Application Security Project (OWASP)](https://www.owasp.org/index.php/Main_Page) the OWASP Foundation
-- [WASC OWASP Web Application Firewall](https://www.owasp.org/index.php/WASC_OWASP_Web_Application_Firewall_Evaluation_Criteria_Project) Evaluation Criteria Project
+- [Open Web Application Security Project (OWASP)](https://owasp.org/) the OWASP Foundation
+- [WASC OWASP Web Application Firewall](https://wiki.owasp.org/index.php/WASC_OWASP_Web_Application_Firewall_Evaluation_Criteria_Project) Evaluation Criteria Project
 - [National Cyber Security Centre (NCSC)](https://www.ncsc.gov.uk/) guidance

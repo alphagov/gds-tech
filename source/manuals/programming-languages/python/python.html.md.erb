@@ -1,7 +1,7 @@
 ---
 title: Python style guide
-last_reviewed_on: 2021-04-08
-review_in: 3 months
+last_reviewed_on: 2021-07-13
+review_in: 6 months
 ---
 
 # <%= current_page.data.title %>
@@ -289,10 +289,10 @@ can be reasonably expected to work.
 > - This requires pip 18.1, and we have not tried it much at GDS.
 >
 > - In the past, we've documented such dependencies in a `requirements.txt` file
-> ([example](https://github.com/alphagov/digitalmarketplace-utils/commit/dc16012af6b55d9eda4e8dd7fee514103682a5c7#diff-b4ef698db8ca845e5845c4618278f29a)),
+> ([example](https://github.com/alphagov/digitalmarketplace-utils/commit/dc16012af6b55d9eda4e8dd7fee514103682a5c7#diff-4d7c51b1efe9043e44439a949dfd92e5827321b34082903477fd04876edb7552)),
 > but any application wanting to depend on your library then needs to manually copy those sub-dependencies into its
 > own list
-> ([example](https://github.com/alphagov/digitalmarketplace-briefs-frontend/commit/5fb3df85bf9fa109ba3eaf1750a4fba4e92ef2a8#diff-28ad48f17e559daf5f2116b1d6a7f620)).
+> ([example](https://github.com/alphagov/digitalmarketplace-briefs-frontend/commit/5fb3df85bf9fa109ba3eaf1750a4fba4e92ef2a8#diff-4d7c51b1efe9043e44439a949dfd92e5827321b34082903477fd04876edb7552)).
 
 Specify dependencies needed only for testing your library in `tox.ini` if you are using [Tox](https://tox.readthedocs.io/en/latest/)
 ([example](https://github.com/alphagov/notifications-python-client/blob/f27b67a53371c68c36583f985c29b0526e2294b9/tox.ini)),
@@ -313,9 +313,9 @@ of how likely your proposal is of being accepted as a pull request even before y
 
 
 [github-gds-way]: https://github.com/alphagov/gds-way
-[gds-way-deps]: /software-development/tracking-dependencies
-[github-gds-way-readme-making-changes]: https://github.com/alphagov/gds-way/blob/main/README.md#making-changes
-[gds-way-code-style-guides]: /software-development/style-guides
+[gds-way-deps]: /standards/tracking-dependencies.html
+[github-gds-way-readme-making-changes]: https://github.com/alphagov/gds-way/blob/main/README.md#making-documentation-changes
+[gds-way-code-style-guides]: /manuals/programming-languages.html
 [slack-python]: https://gds.slack.com/messages/python
 [linting]: linting.html
 [WikiCyclomatic_complexity]: https://en.wikipedia.org/wiki/Cyclomatic_complexity
@@ -330,7 +330,7 @@ of how likely your proposal is of being accepted as a pull request even before y
 [Pyflakes]: https://github.com/pycqa/pyflakes
 [McCabe]: https://pypi.org/project/mccabe/
 [dm-deps-commit]: https://github.com/alphagov/digitalmarketplace-api/commit/95ac12206d26e6b219dd381dd63641c33467afbd
-[dm-deps-commit-makefile]: https://github.com/alphagov/digitalmarketplace-api/commit/95ac12206d26e6b219dd381dd63641c33467afbd#diff-b67911656ef5d18c4ae36cb6741b7965
+[dm-deps-commit-makefile]: https://github.com/alphagov/digitalmarketplace-api/commit/95ac12206d26e6b219dd381dd63641c33467afbd#diff-76ed074a9305c04054cdebb9e9aad2d818052b07091de1f20cad0bbac34ffb52
 [snyk.io]: https://snyk.io/
 [setup-deps]: https://docs.python.org/3/distutils/setupscript.html#relationships-between-distributions-and-packages
 [PEP 440]: https://www.python.org/dev/peps/pep-0440/#direct-references

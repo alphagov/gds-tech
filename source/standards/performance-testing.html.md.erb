@@ -1,6 +1,6 @@
 ---
 title: Performance testing
-last_reviewed_on: 2021-01-05
+last_reviewed_on: 2021-07-13
 review_in: 6 months
 ---
 
@@ -8,7 +8,7 @@ review_in: 6 months
 
 Make sure your service performs the way users need it to. If your service does not perform as expected under extra load it will impact your users.
 
-You should run performance tests to check how your service performs in certain situations. For example, during a [denial-of-service attack (DoS attack)](https://www.ncsc.gov.uk/guidance/denial-service-dos-guidance-collection).
+You should run performance tests to check how your service performs in certain situations. For example, during a [denial-of-service attack (DoS attack)](https://www.ncsc.gov.uk/collection/denial-service-dos-guidance-collection).
 
 The Service Manual has more information about why you need to [test your service’s performance](https://www.gov.uk/service-manual/technology/test-your-services-performance) and how to start capacity planning and running performance tests.
 
@@ -26,7 +26,7 @@ Test complete journeys that are representative of how your service is used in pr
 
 ### Plan test scenarios
 
-A scenario is a hypothetical event when your service will be under heavy load. For example, every year the [G-Cloud framework on the Digital Marketplace](https://www.gov.uk/guidance/the-g-cloud-framework-on-the-digital-marketplace) opens for applications from suppliers for several weeks. This activity increases load on the [Digital Marketplace](https://www.digitalmarketplace.service.gov.uk/) up to the deadline.
+A scenario is a hypothetical event when your service will be under heavy load. For example, every year the [G-Cloud framework on the Digital Marketplace](https://www.gov.uk/guidance/buying-and-selling-on-the-digital-marketplace#buy-services-through-the-digital-marketplace) opens for applications from suppliers for several weeks. This activity increases load on the [Digital Marketplace](https://www.digitalmarketplace.service.gov.uk/) up to the deadline.
 
 When most of its application infrastructure moved to the [GOV.UK PaaS](https://www.cloud.service.gov.uk/) the Digital Marketplace service needed to retest the service. Its developers and performance analysts queried historical logs and Google Analytics for popular journeys, modelling normal and peak capacity needs for the previous year’s G-Cloud framework application period.
 
@@ -40,7 +40,7 @@ Inform people affected by your test. For example, tell hosting providers or deve
 
 You do not need to fully hand code your tests because most load testing tools like [Gatling](https://gatling.io/), include scenario recorders. Some test scenarios may still need manual preparation, for example, providing lists of test users or specific search terms.
 
-Gatling is a popular load testing tool used by many teams at GDS including [GOV.UK](https://www.gov.uk/), [GOV.UK Pay](https://www.payments.service.gov.uk/), [GOV.UK Notify](https://www.notifications.service.gov.uk/) and [Digital Marketplace](https://www.digitalmarketplace.service.gov.uk/).
+Gatling is a popular load testing tool used by many teams in GDS and CDIO including [GOV.UK](https://www.gov.uk/), [GOV.UK Pay](https://www.payments.service.gov.uk/), [GOV.UK Notify](https://www.notifications.service.gov.uk/) and [Digital Marketplace](https://www.digitalmarketplace.service.gov.uk/).
 
 When testing APIs or very simple web applications, [`vegeta`](https://github.com/tsenart/vegeta) is a tool used by [GOV.UK Notify](https:///www.notifications.service.gov.uk), and [GOV.UK PaaS](https://www.cloud.service.gov.uk), for automated performance testing. It can also be used interactively with [`angle-grinder`](https://github.com/rcoh/angle-grinder), or [`jaggr`](https://github.com/rs/jaggr) and [`jplot`](https://github.com/rs/jplot).
 
@@ -50,7 +50,7 @@ Test environments must resemble your production environment as far as possible s
 
 Consider how to [monitor service performance](https://gds-way.cloudapps.digital/standards/monitoring.html) during the load test. Your service will likely already have dashboards and graphs set up for common metrics such as CPU and memory utilization. Decide if your current metrics are sufficient or if you need to turn on additional logging or configure profiling traces.
 
-Perform practice runs of your tests to make sure they work as expected. You may need to disable [Cross-Site Request Forgery (CSRF)](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)) tokens and rate limiting in your test environment.
+Perform practice runs of your tests to make sure they work as expected. You may need to disable [Cross-Site Request Forgery (CSRF)](https://owasp.org/www-community/attacks/csrf) tokens and rate limiting in your test environment.
 
 ## Run your tests
 
@@ -98,4 +98,4 @@ To find our more about performance testing read:
 
 - the Service Manual about [testing your service’s performance](https://www.gov.uk/service-manual/technology/test-your-services-performance)
 - [The Twelve-Factor App](https://12factor.net/) a methodology for building software-as-a-service apps
-- [Gatling product documentation](https://gatling.io/docs/current/) about maintainable and high performance load testing
+- [Gatling product documentation](https://gatling.io/docs/gatling/reference/current/) about maintainable and high performance load testing

@@ -42,3 +42,4 @@ redirects:
   /standards/reliability-engineering.html: /standards/cdio-pillars.html#reliability-engineering
   /standards/testing-with-rspec.html: /manuals/programming-languages/ruby.html#testing-with-rspec
   /standards/technical-operations.html: /standards/cdio-pillars.html
+  /standards/secrets-ACL.html: /standards/secrets-acl.html

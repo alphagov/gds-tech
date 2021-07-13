@@ -6,16 +6,16 @@ review_in: 6 months
 
 # <%= current_page.data.title %>
 
-Setting SLIs helps you set realistic objectives for your service and avoid over-committing resources on [Site Reliability Engineering (SRE)](https://landing.google.com/sre/). SLIs benefit your service by:
+Setting SLIs helps you set realistic objectives for your service and avoid over-committing resources on [Site Reliability Engineering (SRE)](https://sre.google/). SLIs benefit your service by:
 
-- defining [Service Level Objectives (SLO)](https://landing.google.com/sre/sre-book/chapters/service-level-objectives/#indicators-o8seIAcZ) for your service’s user journeys
+- defining [Service Level Objectives (SLO)](https://sre.google/sre-book/service-level-objectives/) for your service’s user journeys
 - helping prioritise your work and improve your infrastructure
 - creating metrics to help [classify incidents (P1-P4)](https://gds-way.cloudapps.digital/standards/incident-management.html)
 - measuring how your system performs in the medium to long term
 
 The SLIs you define must be specific to your service users’ experience. Your SLIs should prompt your SLOs and inform your Service Level Agreement (SLA).
 
-Read the [Google Site Reliability Engineering (SRE) manual](https://landing.google.com/sre/sre-book/toc/) for more information about service level terminology.
+Read the [Google Site Reliability Engineering (SRE) manual](https://sre.google/sre-book/table-of-contents/) for more information about service level terminology.
 
 ## Run your workshop
 
@@ -139,7 +139,7 @@ The team defined the SLI over the last hour the service collected metrics, ident
 
 The first sets of SLIs are a percentage of:
 
-- successful ([status code is not 5xx](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#5xx_Server_errors)) requests
+- successful ([status code is not 5xx](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#5xx_server_errors)) requests
 - requests that the service responds to within 2.5s
 
 You could also represent this relationship using a formula:
@@ -165,5 +165,5 @@ The team has since refined the percentage of successful requests responded withi
 Find out more about SLIs and how to identify and create metrics by reading:
 
 - The [Google Site Reliability Engineering (SRE)](https://landing.google.com/sre/sre-book/chapters/service-level-objectives/#indicators-o8seIAcZ) manual
-- [SRE fundamentals: SLIs, SLAs and SLOs](https://cloud.google.com/blog/products/gcp/sre-fundamentals-slis-slas-and-slos) - Google Cloud Platform blog
-- [The Sysadmin Approach to Service Management](https://landing.google.com/sre/sre-book/chapters/production-environment/) - Site Reliability Engineering by Google
+- [SRE fundamentals: SLIs, SLAs and SLOs](https://cloud.google.com/blog/products/devops-sre/sre-fundamentals-slis-slas-and-slos) - Google Cloud Platform blog
+- [The Sysadmin Approach to Service Management](https://sre.google/sre-book/production-environment/) - Site Reliability Engineering by Google
